@@ -1,59 +1,58 @@
-# InvoiceApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+# Guía para Arrancar el Proyecto
 
-## Development server
+Esta guía te ayudará a configurar y ejecutar el proyecto en tu entorno local paso a paso.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 1. **Requisitos Previos**
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Asegúrate de tener instaladas las siguientes herramientas:
 
-## Code scaffolding
+- Node.js >= 18
+- Angular CLI 19.x
+- Acceso al backend en localhost:3000
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 2. **Clonar el Repositorio**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Clona el repositorio en tu máquina local:
 
 ```bash
-ng generate --help
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_PROYECTO>
 ```
 
-## Building
+---
 
-To build the project run:
+## 3. **Instalar Dependencias**
+
+### JavaScript
+
+Instala las dependencias necesarias:
 
 ```bash
-ng build
+yarn install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 4. **Ejecutar el Servidor**
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Inicia el servidor:
 
 ```bash
-ng test
+yarn start
 ```
 
-## Running end-to-end tests
+## 4. **API Enpoints**
 
-For end-to-end (e2e) testing, run:
+- URL: http://localhost:3000/api/v1/invoices
 
-```bash
-ng e2e
-```
+### GET /api/v1/invoices
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Parámetros: start_date, end_date
+- Retorna: Invoice[]
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
