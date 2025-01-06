@@ -1,0 +1,70 @@
+.date-selector {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date-selector__title {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.date-selector__form {
+  display: flex;
+  gap: 20px;
+}
+
+.date-selector__group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.date-selector__input-container {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date-selector__label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.date-selector__input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.date-selector__input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.date-selector__button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.date-selector__button:hover {
+  background-color: #0056b3;
+}

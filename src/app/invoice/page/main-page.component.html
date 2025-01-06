@@ -1,0 +1,14 @@
+
+<app-date-selector (onDateSelected)="getInvoices($event)"></app-date-selector>
+
+<div *ngIf="loading | async" class="loading-spinner">
+  <div class="spinner"></div>
+</div>
+
+<div class="invoice-grid">
+  <div class="invoice-grid__item" *ngFor="let invoice of invoices">
+    <app-invoice-invoice-card [invoice]="invoice"></app-invoice-invoice-card>
+  </div>
+</div>
+
+<h3 *ngIf="noContentValue | async">No se encontraron facuras</h3>

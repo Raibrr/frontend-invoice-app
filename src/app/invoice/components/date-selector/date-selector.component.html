@@ -1,0 +1,33 @@
+<div class="date-selector">
+  <h3 class="date-selector__title">Selecciona un periodo de fechas:</h3>
+
+  <form class="date-selector__form" (ngSubmit)="emitDates()">
+    <div class="date-selector__group">
+      <div class="date-selector__input-container">
+        <label class="date-selector__label">Fecha de inicio</label>
+        <input
+          class="date-selector__input"
+          type="date"
+          [min]="minDate"
+          [max]="maxDate"
+          [(ngModel)]="dates.start_date"
+          name="start_date"
+          placeholder="Selecciona fecha inicio">
+      </div>
+
+      <div class="date-selector__input-container">
+        <label class="date-selector__label">Fecha fin</label>
+        <input
+          class="date-selector__input"
+          type="date"
+          [min]="minDate"
+          [max]="maxDate"
+          [(ngModel)]="dates.end_date"
+          name="end_date"
+          placeholder="Selecciona fecha fin">
+      </div>
+    </div>
+
+    <button class="date-selector__button" type="submit">Buscar</button>
+  </form>
+</div>
